@@ -1,9 +1,3 @@
-@mixin btns-constructer($str, $color, $background) {
-  .btns-#{$str}, .btnl-#{$str}, .btnl-outline-#{$str} {
-    color: $color;
-    background-color: $background;
-  }
-}
 
 .btns, .btnl, .btnl-outline, .btnl-outline-modal, .btnl-outline-danger{
   display: flex;

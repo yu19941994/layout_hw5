@@ -1,0 +1,12 @@
+@mixin fontC--constructer($str, $color) {
+  .fontC--#{$str} {
+    color: $color;
+  }
+}
+
+@mixin btns-constructer($str, $color, $background) {
+  .btns-#{$str}, .btnl-#{$str}, .btnl-outline-#{$str} {
+    color: $color;
+    background-color: $background;
+  }
+}
