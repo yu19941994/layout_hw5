@@ -1,0 +1,32 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.font--1, .font--2 {
+  display: block;
+  line-height: 1.5;
+}
+
+.font--1{
+    font-size: 14px;
+}
+
+.font--2{
+    font-size: 12px;
+}
+
+@mixin fontC--constructer($str, $color) {
+  .fontC--#{$str} {
+    color: $color;
+  }
+}
+@include fontC--constructer('primary', $primary);
+@include fontC--constructer('secondary', $secondary);
+// @include fontC--constructer('third', $third);
+@include fontC--constructer('light', $light);
+@include fontC--constructer('dark', $dark);
+
+@include fontC--constructer('muted', $muted);
+@include fontC--constructer('muted--darker', $muted-darker);
+@include fontC--constructer('muted--lighter', $muted-lighter);
+@include fontC--constructer('danger', $danger);

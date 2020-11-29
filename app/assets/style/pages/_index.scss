@@ -1,0 +1,34 @@
+.main{
+    margin-left: 296px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__topleft{
+        display: flex;
+        align-items: center;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contentleft{
+        width: 33%;
+    }
+    &__contentright{
+        width: 66%;
+    }
+    &__time{
+        text-align: right;
+    }
+    &__add{
+        display: flex;
+        align-items: center;
+        .h6{
+            margin-bottom: 0;
+        }
+        
+    }
+}
+

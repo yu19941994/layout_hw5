@@ -1,0 +1,16 @@
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a.page-link{
+    color: $dark;
+    border: 1px solid $secondary;
+    &:nth-child(1), &:nth-child(5){
+        color: $secondary;
+    }
+    &:hover, &:active{
+        background-color: $secondary;
+        color: $light;
+    }
+}

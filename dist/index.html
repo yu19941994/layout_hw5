@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="sidebar pl--5 pt--5">
+      <div class="sidebar__main">
+        <h1 class="mb--5">
+          Answer
+        </h1>
+        <ul class="sidebar__menu list-unstyled">
+          <li class="mb--2">
+            <a href="#" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                analytics
+              </i>
+              <h2 class="h6">Dashboard</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="#" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                question_answer
+              </i>
+              <h2 class="h6">Question</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="index.html" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                assignment
+              </i>
+              <h2 class="h6">Assignment</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="#" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                video_library
+              </i>
+              <h2 class="h6">Course</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="admin.html" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                people
+              </i>
+              <h2 class="h6">Admin</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="#" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                settings
+              </i>
+              <h2 class="h6">Settings</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__user">
+        <div class="sidebar__photo mr--1"></div>
+        <div class="sidebar__info pb--5">
+          <p class="h6">Andy Chen</p>
+          <p class="font--1 fontC--muted">andy0401@mail.com</p>
+        </div>
+      </div>
+    </div>
+    
+<div class="main pl--5 pr--4">
+  <div class="main__top pt--5 pb--5 mb--1">
+    <div class="main__topleft">
+      <h3 class="h4 pr--5">Assignment</h3>
+      <div class="dropdown">
+        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <b>All Courses</b>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    <div class="main_topright">
+      <i class="material-icons mr--2">
+        search
+      </i>
+      <i class="material-icons">
+        notifications_active
+      </i>
+    </div>
+  </div>
+  <div class="main__content mb--6">
+    <div class="main__contentleft">
+      <div class="dropdown">
+        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <b>All（4）</b>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="list-group" id="myList" role="tablist">
+        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">
+          <div class="list-group__title">
+            <p class="font--2">Chapter Assignment2</p>
+            <p class="font--2">4 hrs ago</p>
+          </div>
+          <div class="list-group__text">
+            <p class="h6"><b>Please check this file</b></p>
+            <p class="font--2 fontC--muted">Emily Wang</p>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">
+          <div class="list-group__title">
+            <p class="font--2">Chapter Assignment1</p>
+            <p class="font--2">12 hrs ago</p>
+          </div>
+          <div class="list-group__text">
+            <p class="h6"><b>My Homework</b></p>
+            <p class="font--2 fontC--muted">David Xu</p>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">
+          <div class="list-group__title">
+            <p class="font--2">Final Assignment</p>
+            <p class="font--2">18 hrs ago</p>
+          </div>
+          <div class="list-group__text">
+            <p class="h6"><b>Have a problem with this...</b></p>
+            <p class="font--2 fontC--muted">Tony Wei</p>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">
+          <div class="list-group__title">
+            <p class="font--2">Final Assignment</p>
+            <p class="font--2">19 hrs ago</p>
+          </div>
+          <div class="list-group__text">
+            <p class="h6"><b>Did I do it right?</b></p>
+            <p class="font--2 fontC--muted">Christina Lin</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="main__contentright">
+      <p class="font--2 fontC-muted main__time mt--1">2 comments</p>
+      <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel">
+          <div class="card mb--3">
+            <div class="card-header">
+              <div class="card-header__title">
+                <p class="font--2">Chapter Assignment2/HTML&CSS</p>
+                <p class="h6"><b>Please check this file for me, thanks!</b></p>
+              </div>
+              <div class="card-header__setting">
+                <i class="material-icons">
+                  more_vert
+                </i>
+              </div>
+            </div>
+            <ul class="card-body">
+              <li class="media">
+                <div class="media__image1 mr-3"></div>
+                <div class="media-body pr--4">
+                  <h4 class="h6"><b>Emily Wang</b></h4>
+                  <p class="font--2 fontC--muted">10:38 AM(4 hours aog)</p>
+                  <p class="font--1 fontC--dark">
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the
+                    height of the <span class="media__highlight"> div </span> is bigger than the height of the <span class="media__highlight"> img </span> ? There is a gap below the image, but it doesn’t seems to be a
+                    padding/margin. What is the gap or extra space below image?
+                  </p>
+                  <div class="btns btns-primary media__btns">
+                    <i class="material-icons">
+                      attach_file
+                    </i>
+                    HW-2-David.zip
+                  </div>
+                </div>
+              </li>
+              <hr>
+              <li class="media">
+                <div class="media__image2 mr-3"></div>
+                <div class="media-body pr--4">
+                  <h4 class="h6"><b>Andy Chen (You)</b></h4>
+                  <p class="font--2 fontC--muted">13:24 AM (1 hours ago)</p>
+                  <p class="font--1 fontC--dark">
+                    Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.
+                    There is space below that line for the descenders you find on letters like g, j, p and q. 
+                  </p> 
+                  <br>
+                  <p class="font--1 fontC--dark">
+                    You can: 　
+                  </p>
+                  <br>
+                  <ul class="media__list">
+                    <li>
+                      <p class="font--1 fontC--dark">
+                        adjust the <span class="media__highlight"> vertical-align </span> of the image to position it elsewhere (e.g. the <span class="media__highlight"> middle </span> )
+                      </p>
+                    </li>
+                    <li>
+                      <p class="font--1 fontC--dark">
+                        change the <span class="media__highlight"> display </span> so it isn’t inline.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="card__bottom">
+            <div class="card__change">
+              <i class="material-icons mr--4">
+                chevron_left
+              </i>
+              <i class="material-icons">
+                chevron_right
+              </i>
+            </div>
+            <div class="media__btngroup">
+              <div class="btnl-outline btnl-outline-osecondary mr--1">Mark as Read</div>
+              <div class="btnl btnl-secondary">Reply</div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="profile" role="tabpanel">2</div>
+        <div class="tab-pane" id="messages" role="tabpanel">3</div>
+        <div class="tab-pane" id="settings" role="tabpanel">4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>

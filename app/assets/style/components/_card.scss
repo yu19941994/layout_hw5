@@ -1,0 +1,53 @@
+.card-header{
+    background-color: $primary!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title{
+        p{
+            margin-bottom: 4px;
+        }
+    }
+    &__text{
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.media{
+    &__image1, &__image2{
+        width: 40px;
+        height: 40px;
+        border-radius: 24px;
+        background-position: center center;
+        background-size: cover;
+    }
+    &__image1{
+        background-image: url('../images/emilywang.jpeg');
+    }
+    &__image2{
+        background-image: url('../images/andychen.jpeg');
+    }
+    &__highlight {
+        background-color: $primary;
+        color: $secondary;
+    }
+    &__btns{
+        max-width: 176px;
+    }
+    &__list{
+        list-style-type: disc;
+    }
+    &__btngroup{
+        display: flex;
+    }
+}
+
+.card{
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

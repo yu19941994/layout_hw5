@@ -1,0 +1,66 @@
+@mixin btns-constructer($str, $color, $background) {
+  .btns-#{$str}, .btnl-#{$str}, .btnl-outline-#{$str} {
+    color: $color;
+    background-color: $background;
+  }
+}
+
+.btns, .btnl, .btnl-outline, .btnl-outline-modal, .btnl-outline-danger{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btns{
+  padding: 11px 12px;
+  border: 1px solid $primary-dark;
+  &:hover{
+    background-color: $secondary;
+    color: $light;
+  }
+}
+
+.btnl{
+  padding: 8px 32px;
+  &:hover{
+    background-color: $primary;
+    color: $dark;
+    border: 1px solid $secondary;
+  }
+}
+
+.btnl-outline{
+  padding: 8px 32px;
+  border: 1px solid $secondary;
+  &:hover{
+    background-color: $secondary;
+    color: $light;
+    border: none;
+  }
+}
+
+.btnl-outline-modal{
+  padding: 8px 32px;
+  border: 1px solid $primary;
+  &:hover{
+    background-color: $secondary;
+    color: $light;
+    border: none;
+  }
+}
+
+.btnl-outline-danger{
+  padding: 8px 32px;
+  border: 1px solid $danger;
+}
+
+@include btns-constructer('primary', $dark, $primary);
+@include btns-constructer('secondary', $light, $secondary);
+@include btns-constructer('osecondary', $secondary, $light);
+@include btns-constructer('oprimary', $primary, $light);
+@include btns-constructer('danger', $danger, $light);

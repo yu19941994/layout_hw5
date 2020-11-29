@@ -1,0 +1,13 @@
+.main__table{
+    width: 100%;
+    tr{
+        border-bottom: 1px solid $muted-lighter;
+        td:not(.title){
+            padding-top: 19px;
+            padding-bottom: 17px;
+        }
+        &:nth-child(1){
+            border-bottom: 2px solid $dark;
+        }
+    }
+}

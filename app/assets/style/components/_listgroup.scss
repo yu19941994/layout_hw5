@@ -1,0 +1,27 @@
+
+.list-group > .list-group-item.active{
+    background-color: $primary;
+    border: none;
+    color: $dark;
+}
+
+.list-group{
+    &__title,&__text{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        p{
+            margin-bottom: 4px;
+        }
+    }
+    &__text{
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+
+a.list-group-item{
+    padding: 12px;
+}

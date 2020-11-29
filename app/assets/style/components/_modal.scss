@@ -1,0 +1,37 @@
+.modal{
+    &__unverfied{
+        display: flex;
+    }
+    &__verfied{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__verfieddetail{
+        display: flex;
+    }
+    &__content{
+        display: flex;
+    }
+}
+
+div.modal-body{
+    padding-left: 32px;
+    padding-right: 32px;
+    img{
+        width: 141px;
+        height: 141px;
+        object-fit: cover;
+    }
+}
+
+div.form-check{
+    display: flex;
+    align-items: center;
+    .h6{
+        margin-bottom: 0;
+    }
+}
+
+input#Name.form-control.form-edit, input#exampleInputEmail1.form-control.form-edit{
+    background-color: $primary;
+}

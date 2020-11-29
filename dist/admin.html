@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="sidebar pl--5 pt--5">
+      <div class="sidebar__main">
+        <h1 class="mb--5">
+          Answer
+        </h1>
+        <ul class="sidebar__menu list-unstyled">
+          <li class="mb--2">
+            <a href="#" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                analytics
+              </i>
+              <h2 class="h6">Dashboard</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="#" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                question_answer
+              </i>
+              <h2 class="h6">Question</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="index.html" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                assignment
+              </i>
+              <h2 class="h6">Assignment</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="#" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                video_library
+              </i>
+              <h2 class="h6">Course</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="admin.html" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                people
+              </i>
+              <h2 class="h6">Admin</h2>
+            </a>
+          </li>
+          <li class="mb--2">
+            <a href="#" class="sidebar__detail">
+              <i class="material-icons pr--1">
+                settings
+              </i>
+              <h2 class="h6">Settings</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__user">
+        <div class="sidebar__photo mr--1"></div>
+        <div class="sidebar__info pb--5">
+          <p class="h6">Andy Chen</p>
+          <p class="font--1 fontC--muted">andy0401@mail.com</p>
+        </div>
+      </div>
+    </div>
+    
+<div class="main pl--5 pr--4">
+    <div class="main__top pt--5 pb--5 mb--1">
+        <div class="main__topleft">
+            <h3 class="h4 pr--5">Admin</h3>
+            <div class="main__add" data-toggle="modal" data-target="#addModal">
+                <i class="material-icons mr--1 add__icon fontC--secondary">
+                    add
+                </i>
+                <p class="h6">Add New Admin</p>
+            </div>
+        </div>
+        <div class="main_topright">
+            <i class="material-icons mr--2">
+                search
+            </i>
+            <i class="material-icons">
+                notifications_active
+            </i>
+        </div>
+    </div>
+    <table class="main__table mb--4">
+        <tr>
+            <td class="title"><b>ID</b></td>
+            <td class="w--25 title"><b>Name</b></td>
+            <td class="w--35 title"><b>Email</b></td>
+            <td class="title"><b>Verified</b></td>
+            <td class="title"></td>
+        </tr>
+        <tr>
+            <td class="w--15">#1</td>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2" data-toggle="modal" data-target="#viewModal">
+                    remove_red_eye
+                </i>
+                <i class="material-icons" data-toggle="modal" data-target="#editModal">
+                    edit
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td class="w--15">#2</td>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2">
+                    remove_red_eye
+                </i>
+                <i class="material-icons">
+                    edit
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td class="w--15">#3</td>
+            <td>Mahima Lopez</td>
+            <td>Mahima.Lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2">
+                    remove_red_eye
+                </i>
+                <i class="material-icons">
+                    edit
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td class="w--15">#4</td>
+            <td>Pharrell Murray</td>
+            <td>Pharrell.Murray@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2">
+                    remove_red_eye
+                </i>
+                <i class="material-icons">
+                    edit
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td class="w--15">#5</td>
+            <td>Annika Mcbride</td>
+            <td>Annika.Mcbride@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2">
+                    remove_red_eye
+                </i>
+                <i class="material-icons">
+                    edit
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td class="w--15">#6</td>
+            <td>Fatimah Clark</td>
+            <td>Fatimah.Clark@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2">
+                    remove_red_eye
+                </i>
+                <i class="material-icons">
+                    edit
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td class="w--15">#7</td>
+            <td>Klaudia Rhodes</td>
+            <td>Klaudia.Rhodes@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2">
+                    remove_red_eye
+                </i>
+                <i class="material-icons">
+                    edit
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td class="w--15">#8</td>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2">
+                    remove_red_eye
+                </i>
+                <i class="material-icons">
+                    edit
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td class="w--15">#9</td>
+            <td>Sabrina Stephenson</td>
+            <td>Sabrina.Stephenson@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2">
+                    remove_red_eye
+                </i>
+                <i class="material-icons">
+                    edit
+                </i>
+            </td>
+        </tr>
+        <tr>
+            <td class="w--15">#10</td>
+            <td>Annie Smith</td>
+            <td>Annie.Smith@mail.com</td>
+            <td>Yes</td>
+            <td class="al--right">
+                <i class="material-icons mr--2">
+                    remove_red_eye
+                </i>
+                <i class="material-icons">
+                    edit
+                </i>
+            </td>
+        </tr>
+        
+        
+    </table>
+    <nav aria-label="Page navigation example" class="mb--6">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Add Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="h5">Account</p>
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+                </form>
+                <hr>
+                <p class="h5">Verification</p>
+                <div class="modal__unverfied">
+                    <i class="material-icons fontC--danger">
+                        warning
+                    </i>
+                    <p><b>Unverified</b></p>
+                </div>
+                <div class="btnl-outline-modal btnl-outline-osecondary">Send Verification Mail</div>
+                <hr>
+                <p class="h5">Access Level</p>
+                <div class="form-group">
+                    <!-- <label for="exampleFormControlSelect1">Example select</label> -->
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option selected disabled>-Choose access level-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <hr>
+                <p class="h5">Custom Access</p>
+                <div class="form-check mb--7 mt--2">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    <p class="h6">Lecture</p>
+                </div>
+                <div class="form-check mb--7">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox" value="option1"
+                        aria-label="...">
+                    <p class="h6">Coupon</p>
+                </div>
+                <div class="form-check mb--7">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox" value="option1"
+                        aria-label="...">
+                    <p class="h6">Message</p>
+                </div>
+                <div class="form-check mb--7">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox" value="option1"
+                        aria-label="...">
+                    <p class="h6">Setting</p>
+                </div>
+                <div class="form-check mb--6">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox" value="option1"
+                        aria-label="...">
+                    <p class="h6">Text Menu</p>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+               <div class="btnl-outline btnl-outline-osecondary">Cancel</div>
+               <div class="btnl btnl-secondary">Add</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="h5">Account</p>
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control form-edit" id="Name" placeholder="Emir Wicks">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control form-edit" id="exampleInputEmail1" placeholder="emir.wicks@mail.com">
+                    </div>
+                </form>
+                <hr>
+                <p class="h5">Verification</p>
+                <div class="modal__verfied">
+                    <div class="modal__verfieddetail">
+                        <i class="material-icons fontC--secondary">
+                            check_circle
+                        </i>
+                        <p><b>Verified</b></p>
+                    </div>
+                    <p class="font--1">2020/4/12</p>
+                </div>
+                <div class="btnl-outline-modal btnl-outline-oprimary">Send Verification Mail</div>
+                <hr>
+                <p class="h5">Access Level</p>
+                <div class="form-group">
+                    <!-- <label for="exampleFormControlSelect1">Example select</label> -->
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Admin</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <hr>
+                <p class="h5">Custom Access</p>
+                <div class="form-check mb--7 mt--2">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox"
+                        value="option1" aria-label="...">
+                    <p class="h6">Lecture</p>
+                </div>
+                <div class="form-check mb--7">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox"
+                        value="option1" aria-label="...">
+                    <p class="h6">Coupon</p>
+                </div>
+                <div class="form-check mb--7">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox"
+                        value="option1" aria-label="...">
+                    <p class="h6">Message</p>
+                </div>
+                <div class="form-check mb--7">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox"
+                        value="option1" aria-label="...">
+                    <p class="h6">Setting</p>
+                </div>
+                <div class="form-check mb--6">
+                    <input class="form-check-input position-static mr--3" type="checkbox" id="blankCheckbox"
+                        value="option1" aria-label="...">
+                    <p class="h6">Text Menu</p>
+                </div>
+                <hr>
+                <p class="h5">Deactivate Account</p>
+                <div class="modal__unverfied">
+                    <i class="material-icons fontC--danger">
+                        warning
+                    </i>
+                    <p class="fontC--danger">This cannot be undone!</p>
+                </div>
+                <div class="btnl-outline-danger btnl-outline-oprimary">Deactivate This Account</div>
+            </div>
+            <div class="modal-footer">
+                <div class="btnl-outline btnl-outline-osecondary">Cancel</div>
+                <div class="btnl btnl-secondary">Add</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- View Modal -->
+<div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content pt--4">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal__content">
+                    <img src="assets/images/emir.jpeg" alt="" class="mr--4">
+                    <div class="modal__name">
+                        <p class="h6">#1</p>
+                        <p class="h6">Admin</p>
+                        <p class="h4"><b>Emir WIcks</b></p>
+                        <p class="font--1 fontC--muted--lighter">emir.wicks@mail.com</p>
+                        <span class="media__highlight"> Verified </span>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="modal-footer">
+                <div class="btnl-outline btnl-outline-danger">Deactivate</div>
+                <div class="btnl btnl-secondary">Edit</div>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
