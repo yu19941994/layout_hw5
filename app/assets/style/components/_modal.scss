@@ -12,8 +12,19 @@
     &__content{
         display: flex;
     }
+    &__collapse{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
+.modal__arrow[aria-expanded = 'true'] .material-icons{
+    transform: rotate(-180deg);
+}
+
+.modal__arrow[aria-expanded = 'false'] .material-icons{
+    transform: rotate(0);
+}
 div.modal-body{
     padding-left: 32px;
     padding-right: 32px;

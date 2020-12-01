@@ -506,18 +506,23 @@
                 </button>
                 <div class="modal__content">
                     <img src="assets/images/emir.jpeg" alt="" class="mr--4">
-                    <div class="modal__name">
+                    <div class="modal__name w-100">
                         <p class="h6">#1</p>
                         <p class="h6">Admin</p>
                         <p class="h4"><b>Emir WIcks</b></p>
                         <p class="font--1 fontC--muted--lighter">emir.wicks@mail.com</p>
-                        <span class="media__highlight"> Verified </span>
+                        <div class="modal__collapse w-100">
+                            <span class="media__highlight"> Verified </span>
+                            <a class="modal__arrow" data-toggle="collapse" href="#collapseModal" role="button" aria-expanded="false" aria-controls="collapseModal">
+                                <span class="material-icons fontC--secondary">
+                                    keyboard_arrow_down
+                                </span>
+                            </a>               
+                        </div>
                     </div>
-                </div>
-                
-
+                </div>                
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer collapse" id="collapseModal">
                 <button class="btnl-outline btnl-outline-danger">Deactivate</button>
                 <butotn class="btnl btnl-secondary">Edit</button>
             </div>
