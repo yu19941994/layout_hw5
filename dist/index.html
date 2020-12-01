@@ -13,11 +13,11 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="sidebar pl--5 pt--5">
+  <div class="container-fluid d-flex">
+    <nav class="sidebar pl--5 pt--5">
       <div class="sidebar__main">
         <h1 class="mb--5">
-          Answer
+          <a href="index.html">Answer</a>
         </h1>
         <ul class="sidebar__menu list-unstyled">
           <li class="mb--2">
@@ -73,49 +73,47 @@
       <div class="sidebar__user">
         <div class="sidebar__photo mr--1"></div>
         <div class="sidebar__info pb--5">
-          <p class="h6">Andy Chen</p>
-          <p class="font--1 fontC--muted">andy0401@mail.com</p>
+          <h6>Andy Chen</h6>
+          <a href="mailto:andy0401@mail.com" class="font--1 fontC--muted">andy0401@mail.com</a>
         </div>
       </div>
-    </div>
+    </nav>
     
 <div class="main pl--5 pr--4">
   <div class="main__top pt--5 pb--5 mb--1">
     <div class="main__topleft">
       <h3 class="h4 pr--5">Assignment</h3>
-      <div class="dropdown">
-        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <b>All Courses</b>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <div class="form__select">
+        <select>
+          <option>All Courses</option>
+          <option>Math</option>
+          <option>English</option>
+        </select>
       </div>
+      
     </div>
     <div class="main_topright">
-      <i class="material-icons mr--2">
-        search
-      </i>
-      <i class="material-icons">
-        notifications_active
-      </i>
+      <a href="#">
+        <i class="material-icons mr--2 fontC--dark">
+          search
+        </i>
+      </a>
+      <a href="#">
+        <i class="material-icons fontC--dark">
+          notifications_active
+        </i>
+      </a>
+      
     </div>
   </div>
   <div class="main__content mb--6">
     <div class="main__contentleft">
-      <div class="dropdown">
-        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <b>All（4）</b>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <div class="form__select">
+        <select>
+          <option>All(4)</option>
+          <option>1</option>
+          <option>2</option>
+        </select>
       </div>
       <div class="list-group" id="myList" role="tablist">
         <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">
@@ -163,7 +161,7 @@
     <div class="main__contentright">
       <p class="font--2 fontC-muted main__time mt--1">2 comments</p>
       <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel">
+        <div class="tab-pane active position--relative" id="home" role="tabpanel">
           <div class="card mb--3">
             <div class="card-header">
               <div class="card-header__title">
@@ -171,9 +169,11 @@
                 <p class="h6"><b>Please check this file for me, thanks!</b></p>
               </div>
               <div class="card-header__setting">
-                <i class="material-icons">
-                  more_vert
-                </i>
+                <a href="#">
+                  <i class="material-icons fontC--dark">
+                    more_vert
+                  </i>
+                </a>
               </div>
             </div>
             <ul class="card-body">
@@ -187,12 +187,12 @@
                     height of the <span class="media__highlight"> div </span> is bigger than the height of the <span class="media__highlight"> img </span> ? There is a gap below the image, but it doesn’t seems to be a
                     padding/margin. What is the gap or extra space below image?
                   </p>
-                  <div class="btns btns-primary media__btns">
+                  <button class="btns btns-primary media__btns">
                     <i class="material-icons">
                       attach_file
                     </i>
                     HW-2-David.zip
-                  </div>
+                  </button>
                 </div>
               </li>
               <hr>
@@ -226,21 +226,99 @@
               </li>
             </ul>
           </div>
+          <div class="collapse form__reply position-absolute w-100" id="collapseReply">
+            <ul class="list-unstyled form__toolbar pb--4 pt--4 mb--0">
+              <div class="dropdown">
+                <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <b>Body Text</b>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">1</a>
+                  <a class="dropdown-item" href="#">2</a>
+                  <a class="dropdown-item" href="#">3</a>
+                </div>
+              </div>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons fontC--dark">
+                    format_bold
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons fontC--dark">
+                    format_italic
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons fontC--dark">
+                    format_list_bulleted
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons fontC--dark">
+                    format_list_numbered
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons fontC--dark">
+                    insert_photo
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons fontC--dark">
+                    insert_link
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons fontC--dark">
+                    code
+                  </i>
+                </a>
+              </li>
+            </ul>
+            <!-- <label for="reply"></label> -->
+            <textarea name="reply" id="reply" rows="9" class="form__textarea w-100 pr--1 pl--1 pt--4 pb--4" placeholder="Reply an answer..."></textarea>
+            <div class="form__btngroup pb--4 pr--4">
+              <button class="btnl-outline btnl-outline-osecondary mr--1" data-toggle="collapse" href="#collapseReply" role="button"
+                aria-expanded="false" aria-controls="collapseReply">Cancel</button>
+              <button class="btnl btnl-secondary drop">Reply</button>
+            </div>
+          </div>
           <div class="card__bottom">
             <div class="card__change">
-              <i class="material-icons mr--4">
-                chevron_left
-              </i>
-              <i class="material-icons">
-                chevron_right
-              </i>
+              <a href="#">
+                <i class="material-icons mr--4 fontC--dark">
+                  chevron_left
+                </i>
+              </a>
+              <a href="#">
+                <i class="material-icons fontC--dark">
+                  chevron_right
+                </i>
+              </a>
             </div>
             <div class="media__btngroup">
-              <div class="btnl-outline btnl-outline-osecondary mr--1">Mark as Read</div>
-              <div class="btnl btnl-secondary">Reply</div>
+              <button class="btnl-outline btnl-outline-osecondary mr--1">Mark as Read</button>
+              <button class="btnl btnl-secondary drop" data-toggle="collapse" href="#collapseReply" role="button"
+                aria-expanded="false" aria-controls="collapseReply">Reply</button>
             </div>
           </div>
         </div>
+        
         <div class="tab-pane" id="profile" role="tabpanel">2</div>
         <div class="tab-pane" id="messages" role="tabpanel">3</div>
         <div class="tab-pane" id="settings" role="tabpanel">4</div>

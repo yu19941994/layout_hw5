@@ -1,0 +1,32 @@
+.form{
+    &__select{
+        select{
+            font-weight: bold;
+            padding-right: 7px;
+            border: none;
+        }  
+    }
+    &__reply{
+        bottom: 0px;
+        right: 0px;
+        border: 1px solid $muted-lighter;
+    }
+    &__toolbar{
+        .btn{
+            padding: none;
+        }
+        background-color: $primary;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__btngroup{
+        background-color: $light;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__textarea{
+        border: none;
+    }
+    
+}

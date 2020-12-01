@@ -11,6 +11,10 @@ $muted-lighter: #A8A8A8;
 
 $danger: #E3006E;
 
+.pl--1{
+    padding-left: 16px;
+}
+
 .pl--5{
     padding-left: 32px;
 }
@@ -35,8 +39,16 @@ $danger: #E3006E;
     padding-right: 32px;
 }
 
+.pb--4{
+    padding-bottom: 16px;
+}
+
 .pb--5{
     padding-bottom: 32px;
+}
+
+.mb--0{
+    margin-bottom: 0px;
 }
 
 .mb--1{
@@ -104,4 +116,12 @@ $danger: #E3006E;
 
 .al--right{
     text-align: right;
+}
+
+.position--relative{
+    position: relative;
+}
+
+.position--absolute{
+    position: absolute;
 }

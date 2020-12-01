@@ -1,5 +1,4 @@
 .main{
-    margin-left: 296px;
     &__top{
         display: flex;
         justify-content: space-between;
@@ -25,10 +24,11 @@
     &__add{
         display: flex;
         align-items: center;
+        background-color: $light;
+        border: none;
         .h6{
             margin-bottom: 0;
         }
         
     }
 }
-
